@@ -1,0 +1,64 @@
+html	{
+  padding: 5px;
+    margin: 10px;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+h1 {
+	font-size: 52px;
+	text-align: center;
+}
+
+.title {
+	position: absolute;
+	clear: left;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	font-style: italic;
+	width: 33%;
+    border: 2px solid white;
+    padding: 5px;	
+}
+
+.discr {position: relative;
+	}
+
+#st { 
+	position: relative;
+	float: left;
+	font-size: auto;
+	background-color: #e6ffe6;
+	width: 30%;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+#nd {
+	position: relative;
+	float: left;
+	font-size: auto;
+	background-color: #e6ffe6;
+	width: 30%;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+#rd {
+	position: relative;
+	float: left;
+	font-size: auto;
+	background-color: #e6ffe6;
+	width: 30%;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 10px;
+}
+
