@@ -1,6 +1,5 @@
-* {
-  box-sizing: border-box;
-}
+<meta name="viewport" content="width=device-width">
+
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -8,13 +7,13 @@ body {
 
 h1 {
 	text-align: center;
-	font-size: 300%
+	font-size: auto;
+	padding: auto;
 	}
 
 div {
+	box-sizing: border-box;
 	font-size: 24px;
-	background-color: #e6ffe6;
-	width: 90%;
     border: 1px solid black;
     margin: 10px auto 10px auto;
 }
@@ -25,13 +24,15 @@ div {
 }
 
 .bbox {
+	float: left;
+	width: 33.33%;
 	background-color: white;
 	border-color: white;
 }
 
 .dicr {
 	clear: right;
-	width: 90%;
+	width: 98%;
 	margin-bottom: auto;
 	margin-right: auto;
   	margin-left: auto;
@@ -48,6 +49,22 @@ div {
     border: 1px solid black;
 }
 
+#st {
+	width: 90%;
+	background-color: #e6ffe6;
+	}
+
+#nd {
+	width: 90%;
+	background-color: #e6ffe6;
+	}
+
+#rd {
+	width: 90%;
+	background-color: #e6ffe6;
+	}
+
+
 #st .title {
 	background-color: red;
 }
@@ -61,7 +78,8 @@ div {
 }
 
 /*big devises*/
-@media (min-width: 993px) {.bd}
+
+/*@media (min-width: 993px) {
 	.bd {
 	float: left;
 	width: 33.33%;
@@ -69,23 +87,27 @@ div {
 
 /*medium devises*/
 
-@media (min-width: 768px) and (max-width: 992px) {.md1, .md2 {
-		.md1 {
+@media (max-width: 992px) {
+	.md1 {
 		float: left;
 		background-color: white;
 		border-color: white;
 		width: 50%;
-		}
-
-		.md2 {
-		clear: left;
-		float: left;
-		width: 100%;
-		}
-	}
 }
+
+	.md2 {width: 100%;}
+
+	#st {width: 100%;}
+	#nd {width: 100%;}
+	#rd {width: 100%}
+	 
+}
+
 /*small devises*/
 
-@media (max-width: 767px) {.sd}
-
-.sd {width: 90%}
+@media (max-width: 767px) {
+	.sd {width: 100%;}
+	#st {width: 100%}
+	#nd {width: 100%}
+	#rd {width: 100%}
+	}
